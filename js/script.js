@@ -32,9 +32,11 @@ console.log('il biglietto costa =', pxb);
 
 //eta' minore di 18 anni
 if(eta < 18){
+    //pxb20 = variabile contenente il prezzo del biglietto scontato del 20%
     let pxb20 = pxb * 0.20;
     pxb20 = parseFloat(pxb20.toFixed(2));
     console.log('Sconto minorenne 20% =', pxb20);
+    //pxb20round = variabile contenente il prezzo del biglietto scontato del 20% arrotondato alla seconda cifra decimale
     let pxb20round = pxb - pxb20;
     pxb20round = parseFloat(pxb20round.toFixed(2));
     console.log('Totale con sconto applicato =',pxb20round);
@@ -46,9 +48,11 @@ if(eta < 18){
 
 //eta' over 65
 }else if(eta > 65){
+    //pxb40 = variabile contenente il prezzo del biglietto scontato del 40%
     let pxb40 = pxb * 0.40;
     pxb40 = parseFloat(pxb40.toFixed(2));
     console.log('Sconto over 65 40% =', pxb40);
+    //pxb40round = variabile contenente il prezzo del biglietto scontato del 40% arrotondato alla seconda cifra decimale
     let pxb40round = pxb - pxb40;
     pxb40round = parseFloat(pxb40round.toFixed(2));
     console.log('Totale con sconto applicato =',pxb40round);
