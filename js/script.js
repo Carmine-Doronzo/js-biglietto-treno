@@ -13,14 +13,16 @@ let km = parseFloat(prompt('inserisci i km del percorso'));//number
 //raccogliamo il dato eta'
 let eta = parseInt(prompt('inserisci la tua eta'));//number
 
-//inseriamo una costante che sarebbe il prezzo per kilometro
+//BONUS
+//Funzione isnan per controllare se un valore e' un numero: restituisce vero se non e' numerico e falso se lo e'
+//"!" l'ho messo perche' significa negazione dato che il prompt prende valori stringa risulterebbe non valido 
+if(!isNaN(km,eta)){
+
+    //inseriamo una costante che sarebbe il prezzo per kilometro
 const pxkm = 0.21;//number
 
 //creiamo una variabile contenente il prezzo del biglietto
 let pxb = (km * pxkm);//number
-
-
-
 
 //stampiamo i kilometri da percorrere
 console.log('i km da percorrere sono:',km,'km');
@@ -61,4 +63,6 @@ else{
     console.log('il biglietto costa =', parseFloat(pxb.toFixed(2)),'euro');
 
 }
-
+}else{
+    console.log('valore non valido');
+}
