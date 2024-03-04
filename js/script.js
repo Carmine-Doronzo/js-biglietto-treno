@@ -16,7 +16,7 @@ let eta = parseInt(prompt('inserisci la tua eta'));//number
 //BONUS
 //Funzione isnan per controllare se un valore e' un numero: restituisce vero se non e' numerico e falso se lo e'
 //"!" l'ho messo perche' significa negazione dato che il prompt prende valori stringa risulterebbe non valido 
-if(!isNaN(km,eta)){
+if(!isNaN(km)&&!isNaN(eta)){
 
     //inseriamo una costante che sarebbe il prezzo per kilometro
 const pxkm = 0.21;//number
