@@ -22,8 +22,13 @@ let pxb = (km * pxkm);
 
 pxb = parseFloat(Math.round(pxb * 100)/100);
 
+//stampiamo i kilometri da percorrere
+console.log('i km da percorrere sono:',km,'km')
+
+//stampiamo l'eta' 
+console.log('la tua eta e di:',eta,'anni')
 //stampiamo in console il prezzo del biglietto senza sconti
-console.log('il biglietto costa =', pxb);
+console.log('il biglietto costa =', pxb,'euro');
 
 //utilizziamo delle condizioni per fare degli sconti 
 
@@ -32,26 +37,26 @@ if(eta < 18){
     //pxb20 = variabile contenente il prezzo del biglietto scontato del 20%
     let pxb20 = pxb * 0.20;
     pxb20 = parseFloat(Math.round(pxb20*100)/100);
-    console.log('Sconto minorenne 20% =', pxb20);
+    console.log('Sconto minorenne 20% =', pxb20,'euro');
     //pxb20round = variabile contenente il prezzo del biglietto scontato del 20% arrotondato alla seconda cifra decimale
     let pxb20round = pxb - pxb20;
     pxb20round = parseFloat(Math.round(pxb20round*100)/100);
-    console.log('Totale con sconto applicato =',pxb20round);
+    console.log('Totale con sconto applicato =',pxb20round,'euro');
 
 //eta' compresa tra i 18 e i 65 anni
 }else if(eta <= 65){
     console.log('nessuno sconto applicato ');
-    console.log('il biglietto costa', pxb);
+    console.log('il biglietto costa', pxb,'euro');
 
 //eta' over 65
 }else if(eta > 65){
     //pxb40 = variabile contenente il prezzo del biglietto scontato del 40%
     let pxb40 = pxb * 0.40;
     pxb40 = parseFloat(Math.round(pxb40 * 100)/100);
-    console.log('Sconto over 65 40% =', pxb40);
+    console.log('Sconto over 65 40% =', pxb40,'euro');
     //pxb40round = variabile contenente il prezzo del biglietto scontato del 40% arrotondato alla seconda cifra decimale
     let pxb40round = pxb - pxb40;
     pxb40round = parseFloat(Math.round(pxb40round *100)/100);
-    console.log('Totale con sconto applicato =',pxb40round);
+    console.log('Totale con sconto applicato =',pxb40round,'euro');
 }
 
